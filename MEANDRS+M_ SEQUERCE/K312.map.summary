@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Mar 13 23:22:36 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : K312
+Top-level Entity Name : K312
+Family : Cyclone IV E
+Total logic elements : 18
+    Total combinational functions : 18
+    Dedicated logic registers : 14
+Total registers : 14
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
