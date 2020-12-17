@@ -1,0 +1,95 @@
+|COUNTER_LPM
+OUT_AND <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+OUT[0] <= lpm_counter0:inst.q[0]
+OUT[1] <= lpm_counter0:inst.q[1]
+OUT[2] <= lpm_counter0:inst.q[2]
+OUT[3] <= lpm_counter0:inst.q[3]
+OUT[4] <= lpm_counter0:inst.q[4]
+CLS => inst30.IN0
+CLS => inst31.IN0
+CLC => lpm_counter0:inst.clock
+CLC => inst29.CLK
+CLC => inst25.IN0
+TR[0] <= <GND>
+TR[1] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+TR[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+TR[3] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+TR[4] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+SET[0] => ~NO_FANOUT~
+SET[1] => inst11.IN0
+SET[2] => inst10.IN0
+SET[3] => inst9.IN0
+SET[4] => inst8.IN0
+
+
+|COUNTER_LPM|lpm_counter0:inst
+clock => clock.IN1
+cnt_en => cnt_en.IN1
+sclr => sclr.IN1
+q[0] <= lpm_counter:LPM_COUNTER_component.q
+q[1] <= lpm_counter:LPM_COUNTER_component.q
+q[2] <= lpm_counter:LPM_COUNTER_component.q
+q[3] <= lpm_counter:LPM_COUNTER_component.q
+q[4] <= lpm_counter:LPM_COUNTER_component.q
+
+
+|COUNTER_LPM|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component
+clock => cntr_msi:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_msi:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_msi:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_msi:auto_generated.q[0]
+q[1] <= cntr_msi:auto_generated.q[1]
+q[2] <= cntr_msi:auto_generated.q[2]
+q[3] <= cntr_msi:auto_generated.q[3]
+q[4] <= cntr_msi:auto_generated.q[4]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|COUNTER_LPM|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_msi:auto_generated
+clock => counter_reg_bit[4].CLK
+clock => counter_reg_bit[3].CLK
+clock => counter_reg_bit[2].CLK
+clock => counter_reg_bit[1].CLK
+clock => counter_reg_bit[0].CLK
+cnt_en => _.IN1
+q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= counter_reg_bit[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= counter_reg_bit[4].DB_MAX_OUTPUT_PORT_TYPE
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+

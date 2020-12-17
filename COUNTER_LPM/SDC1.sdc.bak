@@ -1,0 +1,2 @@
+create_clock -period 1KHz -name {CLC} [get_ports {CLC}]
+set_false_path -from [get_clocks {CLC}] -to [get_ports {OUT}]
