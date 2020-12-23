@@ -1,0 +1,288 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/23/2020 12:00:36"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Magic_Box
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Magic_Box_vlg_sample_tst(
+	AM,
+	CLS,
+	PC,
+	sampler_tx
+);
+input  AM;
+input  CLS;
+input  PC;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(AM or CLS or PC)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module Magic_Box_vlg_check_tst (
+	CLS_SIGNAL,
+	D_trigger,
+	OUTPUT,
+	sampler_rx
+);
+input  CLS_SIGNAL;
+input  D_trigger;
+input  OUTPUT;
+input sampler_rx;
+
+reg  CLS_SIGNAL_expected;
+reg  D_trigger_expected;
+reg  OUTPUT_expected;
+
+reg  CLS_SIGNAL_prev;
+reg  D_trigger_prev;
+reg  OUTPUT_prev;
+
+reg  CLS_SIGNAL_expected_prev;
+reg  D_trigger_expected_prev;
+reg  OUTPUT_expected_prev;
+
+reg  last_CLS_SIGNAL_exp;
+reg  last_D_trigger_exp;
+reg  last_OUTPUT_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:3] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 3'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	CLS_SIGNAL_prev = CLS_SIGNAL;
+	D_trigger_prev = D_trigger;
+	OUTPUT_prev = OUTPUT;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	CLS_SIGNAL_expected_prev = CLS_SIGNAL_expected;
+	D_trigger_expected_prev = D_trigger_expected;
+	OUTPUT_expected_prev = OUTPUT_expected;
+end
+
+
+
+// expected CLS_SIGNAL
+initial
+begin
+	CLS_SIGNAL_expected = 1'b0;
+end 
+
+// expected D_trigger
+initial
+begin
+	D_trigger_expected = 1'b0;
+end 
+
+// expected OUTPUT
+initial
+begin
+	OUTPUT_expected = 1'b0;
+end 
+// generate trigger
+always @(CLS_SIGNAL_expected or CLS_SIGNAL or D_trigger_expected or D_trigger or OUTPUT_expected or OUTPUT)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected CLS_SIGNAL = %b | expected D_trigger = %b | expected OUTPUT = %b | ",CLS_SIGNAL_expected_prev,D_trigger_expected_prev,OUTPUT_expected_prev);
+	$display("| real CLS_SIGNAL = %b | real D_trigger = %b | real OUTPUT = %b | ",CLS_SIGNAL_prev,D_trigger_prev,OUTPUT_prev);
+`endif
+	if (
+		( CLS_SIGNAL_expected_prev !== 1'bx ) && ( CLS_SIGNAL_prev !== CLS_SIGNAL_expected_prev )
+		&& ((CLS_SIGNAL_expected_prev !== last_CLS_SIGNAL_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port CLS_SIGNAL :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", CLS_SIGNAL_expected_prev);
+		$display ("     Real value = %b", CLS_SIGNAL_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_CLS_SIGNAL_exp = CLS_SIGNAL_expected_prev;
+	end
+	if (
+		( D_trigger_expected_prev !== 1'bx ) && ( D_trigger_prev !== D_trigger_expected_prev )
+		&& ((D_trigger_expected_prev !== last_D_trigger_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port D_trigger :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", D_trigger_expected_prev);
+		$display ("     Real value = %b", D_trigger_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_D_trigger_exp = D_trigger_expected_prev;
+	end
+	if (
+		( OUTPUT_expected_prev !== 1'bx ) && ( OUTPUT_prev !== OUTPUT_expected_prev )
+		&& ((OUTPUT_expected_prev !== last_OUTPUT_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port OUTPUT :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", OUTPUT_expected_prev);
+		$display ("     Real value = %b", OUTPUT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_OUTPUT_exp = OUTPUT_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#50000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module Magic_Box_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg AM;
+reg CLS;
+reg PC;
+// wires                                               
+wire CLS_SIGNAL;
+wire D_trigger;
+wire OUTPUT;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+Magic_Box i1 (
+// port map - connection between master ports and signals/registers   
+	.AM(AM),
+	.CLS(CLS),
+	.CLS_SIGNAL(CLS_SIGNAL),
+	.D_trigger(D_trigger),
+	.\OUTPUT (OUTPUT),
+	.PC(PC)
+);
+
+// AM
+always
+begin
+	AM = 1'b0;
+	AM = #500000 1'b1;
+	#500000;
+end 
+
+// CLS
+initial
+begin
+	CLS = 1'b0;
+	CLS = #500000 1'b1;
+	CLS = #1000000 1'b0;
+end 
+
+// PC
+initial
+begin
+	PC = 1'b0;
+	PC = #2500000 1'b1;
+	PC = #1000000 1'b0;
+	PC = #2500000 1'b1;
+	PC = #1000000 1'b0;
+	PC = #2700000 1'b1;
+	PC = #2600000 1'b0;
+	PC = #4900000 1'b1;
+	PC = #600000 1'b0;
+	PC = #6800000 1'b1;
+	PC = #100000 1'b0;
+	PC = #200000 1'b1;
+	PC = #100000 1'b0;
+	PC = #1900000 1'b1;
+	PC = #200000 1'b0;
+	PC = #200000 1'b1;
+	PC = #200000 1'b0;
+	PC = #400000 1'b1;
+	PC = #100000 1'b0;
+end 
+
+Magic_Box_vlg_sample_tst tb_sample (
+	.AM(AM),
+	.CLS(CLS),
+	.PC(PC),
+	.sampler_tx(sampler)
+);
+
+Magic_Box_vlg_check_tst tb_out(
+	.CLS_SIGNAL(CLS_SIGNAL),
+	.D_trigger(D_trigger),
+	.OUTPUT(OUTPUT),
+	.sampler_rx(sampler)
+);
+endmodule
+

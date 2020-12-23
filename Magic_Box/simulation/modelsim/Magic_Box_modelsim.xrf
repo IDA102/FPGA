@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, E:/QUARTUS/Magic_Box/Magic_Box.bdf
+source_file = 1, Waveform_1.vwf
+source_file = 1, E:/QUARTUS/Magic_Box/Waveform.vwf
+source_file = 1, E:/QUARTUS/Magic_Box/db/Magic_Box.cbx.xml
+design_name = Magic_Box
+instance = comp, \PC~input , PC~input, Magic_Box, 1
+instance = comp, \OUTPUT~output , OUTPUT~output, Magic_Box, 1
+instance = comp, \D_trigger~output , D_trigger~output, Magic_Box, 1
+instance = comp, \CLS_SIGNAL~output , CLS_SIGNAL~output, Magic_Box, 1
+instance = comp, \AM~input , AM~input, Magic_Box, 1
+instance = comp, \inst~0 , inst~0, Magic_Box, 1
+instance = comp, \CLS~input , CLS~input, Magic_Box, 1
+instance = comp, \inst4~0 , inst4~0, Magic_Box, 1

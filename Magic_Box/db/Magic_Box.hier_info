@@ -1,0 +1,11 @@
+|Magic_Box
+OUTPUT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+AM => inst3.IN0
+AM => inst4.CLK
+AM => inst6.IN1
+CLS => inst9.IN0
+PC => inst1.IN0
+D_trigger <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLS_SIGNAL <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+

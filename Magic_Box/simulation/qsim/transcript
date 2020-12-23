@@ -1,0 +1,43 @@
+# do Magic_Box.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Magic_Box
+# 
+# Top level modules:
+# 	Magic_Box
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Magic_Box_vlg_sample_tst
+# -- Compiling module Magic_Box_vlg_check_tst
+# -- Compiling module Magic_Box_vlg_vec_tst
+# 
+# Top level modules:
+# 	Magic_Box_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.Magic_Box_vlg_vec_tst 
+# Loading work.Magic_Box_vlg_vec_tst
+# Loading work.Magic_Box
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading altera_ver.dffeas
+# Loading work.Magic_Box_vlg_sample_tst
+# Loading work.Magic_Box_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from Magic_Box_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from Magic_Box_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /Magic_Box_vlg_vec_tst File: Magic_Box.vt
+# ERROR! Vector Mismatch for output port D_trigger :: @time = 500000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port OUTPUT :: @time = 3000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port CLS_SIGNAL :: @time = 4000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           3 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Magic_Box.vt(206)
+#    Time: 50 us  Iteration: 0  Instance: /Magic_Box_vlg_vec_tst/tb_out

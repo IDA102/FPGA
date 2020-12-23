@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\QUARTUS\Magic_Box\simulation\qsim
+vMagic_Box
+Z1 IHW0JIQ5_lj^kCN`_L<=Pl1
+Z2 V<EI30QQJld1?Sm<902L0A1
+Z3 dE:\QUARTUS\Magic_Box\simulation\qsim
+Z4 w1608714037
+Z5 8Magic_Box.vo
+Z6 FMagic_Box.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Magic_Box.vo|
+Z9 o-work work -O0
+Z10 n@magic_@box
+!i10b 1
+Z11 !s100 ;JaHmz7;Pe4`MX<62ZDP:2
+!s85 0
+Z12 !s108 1608714038.201000
+Z13 !s107 Magic_Box.vo|
+!s101 -O0
+vMagic_Box_vlg_check_tst
+!i10b 1
+Z14 !s100 7ZfBoDXKY[JEjOPV<kS_?2
+Z15 I13610[CX_BD5=Uae;9jPC1
+Z16 Vh_Gk6Z2nN4F]7c>m]4zY^2
+R3
+Z17 w1608714036
+Z18 8Magic_Box.vt
+Z19 FMagic_Box.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z20 !s108 1608714038.385000
+Z21 !s107 Magic_Box.vt|
+Z22 !s90 -work|work|Magic_Box.vt|
+!s101 -O0
+R9
+Z23 n@magic_@box_vlg_check_tst
+vMagic_Box_vlg_sample_tst
+!i10b 1
+Z24 !s100 RS5bmhLI5U=NfRF4`MP4[3
+Z25 IP<hn1JGac;cc4CMJ^FMJN1
+Z26 VE^5i<fTm`<I<<9L^B60172
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@magic_@box_vlg_sample_tst
+vMagic_Box_vlg_vec_tst
+!i10b 1
+Z28 !s100 CWPW]JN07o>Lo`9WhKN7L3
+Z29 Ioo3[`DlAJ:oe3o[?3T[RV3
+Z30 VAlMNOeJ<VEF8h4QQ_2NAk3
+R3
+R17
+R18
+R19
+Z31 L0 210
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@magic_@box_vlg_vec_tst
