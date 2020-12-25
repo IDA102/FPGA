@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Magic_Box">
+		<CBX_INST_ENTRY INSTANCE_NAME="|MAGIC_BOX|lpm_counter0:b2v_inst|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_msi.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

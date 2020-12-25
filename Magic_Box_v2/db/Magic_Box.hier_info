@@ -1,0 +1,112 @@
+|MAGIC_BOX
+CLS => SYNTHESIZED_WIRE_0.IN1
+CLS => SYNTHESIZED_WIRE_40.IN1
+AM => AM.IN1
+SET[0] => SYNTHESIZED_WIRE_37.IN0
+SET[1] => SYNTHESIZED_WIRE_33.IN0
+SET[2] => SYNTHESIZED_WIRE_28.IN0
+SET[3] => SYNTHESIZED_WIRE_11.IN0
+SET[4] => SYNTHESIZED_WIRE_3.IN0
+OUT_AND <= SYNTHESIZED_WIRE_48.DB_MAX_OUTPUT_PORT_TYPE
+AM_OUTPUT <= AM_OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
+OUT[0] <= OUT_ALTERA_SYNTHESIZED[0].DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= OUT_ALTERA_SYNTHESIZED[1].DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= OUT_ALTERA_SYNTHESIZED[2].DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= OUT_ALTERA_SYNTHESIZED[3].DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= OUT_ALTERA_SYNTHESIZED[4].DB_MAX_OUTPUT_PORT_TYPE
+TR[0] <= TR_ALTERA_SYNTHESIZED[0].DB_MAX_OUTPUT_PORT_TYPE
+TR[1] <= TR_ALTERA_SYNTHESIZED[1].DB_MAX_OUTPUT_PORT_TYPE
+TR[2] <= TR_ALTERA_SYNTHESIZED[2].DB_MAX_OUTPUT_PORT_TYPE
+TR[3] <= TR_ALTERA_SYNTHESIZED[3].DB_MAX_OUTPUT_PORT_TYPE
+TR[4] <= TR_ALTERA_SYNTHESIZED[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAGIC_BOX|lpm_counter0:b2v_inst
+clock => clock.IN1
+cnt_en => cnt_en.IN1
+sclr => sclr.IN1
+q[0] <= lpm_counter:LPM_COUNTER_component.q
+q[1] <= lpm_counter:LPM_COUNTER_component.q
+q[2] <= lpm_counter:LPM_COUNTER_component.q
+q[3] <= lpm_counter:LPM_COUNTER_component.q
+q[4] <= lpm_counter:LPM_COUNTER_component.q
+
+
+|MAGIC_BOX|lpm_counter0:b2v_inst|lpm_counter:LPM_COUNTER_component
+clock => cntr_msi:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_msi:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_msi:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_msi:auto_generated.q[0]
+q[1] <= cntr_msi:auto_generated.q[1]
+q[2] <= cntr_msi:auto_generated.q[2]
+q[3] <= cntr_msi:auto_generated.q[3]
+q[4] <= cntr_msi:auto_generated.q[4]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|MAGIC_BOX|lpm_counter0:b2v_inst|lpm_counter:LPM_COUNTER_component|cntr_msi:auto_generated
+clock => counter_reg_bit[4].CLK
+clock => counter_reg_bit[3].CLK
+clock => counter_reg_bit[2].CLK
+clock => counter_reg_bit[1].CLK
+clock => counter_reg_bit[0].CLK
+cnt_en => _.IN1
+q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= counter_reg_bit[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= counter_reg_bit[4].DB_MAX_OUTPUT_PORT_TYPE
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+
+|MAGIC_BOX|or5_0:b2v_inst19
+IN1 => lpm_instance.IN0
+IN3 => lpm_instance.IN1
+IN2 => lpm_instance.IN2
+IN5 => lpm_instance.IN3
+IN4 => lpm_instance.IN4
+OUT <= lpm_instance.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAGIC_BOX|or5_1:b2v_inst22
+IN1 => lpm_instance.IN0
+IN3 => lpm_instance.IN1
+IN2 => lpm_instance.IN2
+IN5 => lpm_instance.IN3
+IN4 => lpm_instance.IN4
+OUT <= lpm_instance.DB_MAX_OUTPUT_PORT_TYPE
+
+

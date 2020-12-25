@@ -1,0 +1,267 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// PROGRAM		"Quartus II 32-bit"
+// VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1.02,1.10 SJ Full Version"
+// CREATED		"Fri Dec 25 12:58:10 2020"
+
+module MAGIC_BOX(
+	CLS,
+	AM,
+	SET,
+	OUT_AND,
+	AM_OUTPUT,
+	OUT,
+	TR
+);
+
+
+input wire	CLS;
+input wire	AM;
+input wire	[4:0] SET;
+output wire	OUT_AND;
+output wire	AM_OUTPUT;
+output wire	[4:0] OUT;
+output wire	[4:0] TR;
+
+wire	[4:0] OUT_ALTERA_SYNTHESIZED;
+reg	[4:0] TR_ALTERA_SYNTHESIZED;
+wire	SYNTHESIZED_WIRE_0;
+wire	SYNTHESIZED_WIRE_43;
+wire	SYNTHESIZED_WIRE_44;
+wire	SYNTHESIZED_WIRE_3;
+wire	SYNTHESIZED_WIRE_45;
+wire	SYNTHESIZED_WIRE_46;
+wire	SYNTHESIZED_WIRE_47;
+wire	SYNTHESIZED_WIRE_11;
+wire	SYNTHESIZED_WIRE_14;
+wire	SYNTHESIZED_WIRE_17;
+wire	SYNTHESIZED_WIRE_18;
+wire	SYNTHESIZED_WIRE_19;
+wire	SYNTHESIZED_WIRE_20;
+wire	SYNTHESIZED_WIRE_21;
+wire	SYNTHESIZED_WIRE_22;
+wire	SYNTHESIZED_WIRE_23;
+wire	SYNTHESIZED_WIRE_48;
+wire	SYNTHESIZED_WIRE_28;
+reg	DFF_inst29;
+wire	SYNTHESIZED_WIRE_33;
+wire	SYNTHESIZED_WIRE_37;
+wire	SYNTHESIZED_WIRE_40;
+
+assign	OUT_AND = SYNTHESIZED_WIRE_48;
+assign	SYNTHESIZED_WIRE_45 = 1;
+
+
+
+
+lpm_counter0	b2v_inst(
+	.sclr(SYNTHESIZED_WIRE_0),
+	.clock(AM),
+	.cnt_en(SYNTHESIZED_WIRE_43),
+	.q(OUT_ALTERA_SYNTHESIZED));
+
+
+always@(posedge SYNTHESIZED_WIRE_3 or negedge SYNTHESIZED_WIRE_44 or negedge SYNTHESIZED_WIRE_45)
+begin
+if (!SYNTHESIZED_WIRE_44)
+	begin
+	TR_ALTERA_SYNTHESIZED[4] <= 0;
+	end
+else
+if (!SYNTHESIZED_WIRE_45)
+	begin
+	TR_ALTERA_SYNTHESIZED[4] <= 1;
+	end
+else
+	begin
+	TR_ALTERA_SYNTHESIZED[4] <= SYNTHESIZED_WIRE_45;
+	end
+end
+
+assign	SYNTHESIZED_WIRE_28 = SET[2] & SYNTHESIZED_WIRE_46;
+
+assign	SYNTHESIZED_WIRE_33 = SET[1] & SYNTHESIZED_WIRE_46;
+
+assign	SYNTHESIZED_WIRE_37 = SET[0] & SYNTHESIZED_WIRE_46;
+
+assign	SYNTHESIZED_WIRE_19 = OUT_ALTERA_SYNTHESIZED[4] ~^ TR_ALTERA_SYNTHESIZED[4];
+
+assign	SYNTHESIZED_WIRE_17 = OUT_ALTERA_SYNTHESIZED[3] ~^ TR_ALTERA_SYNTHESIZED[3];
+
+assign	SYNTHESIZED_WIRE_20 = OUT_ALTERA_SYNTHESIZED[2] ~^ TR_ALTERA_SYNTHESIZED[2];
+
+assign	SYNTHESIZED_WIRE_21 = OUT_ALTERA_SYNTHESIZED[1] ~^ TR_ALTERA_SYNTHESIZED[1];
+
+assign	SYNTHESIZED_WIRE_22 = OUT_ALTERA_SYNTHESIZED[0] ~^ TR_ALTERA_SYNTHESIZED[0];
+
+assign	SYNTHESIZED_WIRE_23 =  ~SYNTHESIZED_WIRE_47;
+
+
+or5_0	b2v_inst19(
+	.IN1(OUT_ALTERA_SYNTHESIZED[4]),
+	.IN3(OUT_ALTERA_SYNTHESIZED[2]),
+	.IN2(OUT_ALTERA_SYNTHESIZED[3]),
+	.IN5(OUT_ALTERA_SYNTHESIZED[0]),
+	.IN4(OUT_ALTERA_SYNTHESIZED[1]),
+	.OUT(SYNTHESIZED_WIRE_47));
+
+
+always@(posedge SYNTHESIZED_WIRE_11 or negedge SYNTHESIZED_WIRE_44 or negedge SYNTHESIZED_WIRE_45)
+begin
+if (!SYNTHESIZED_WIRE_44)
+	begin
+	TR_ALTERA_SYNTHESIZED[3] <= 0;
+	end
+else
+if (!SYNTHESIZED_WIRE_45)
+	begin
+	TR_ALTERA_SYNTHESIZED[3] <= 1;
+	end
+else
+	begin
+	TR_ALTERA_SYNTHESIZED[3] <= SYNTHESIZED_WIRE_45;
+	end
+end
+
+assign	SYNTHESIZED_WIRE_48 = SYNTHESIZED_WIRE_14 & SYNTHESIZED_WIRE_47;
+
+
+or5_1	b2v_inst22(
+	.IN1(TR_ALTERA_SYNTHESIZED[4]),
+	.IN3(TR_ALTERA_SYNTHESIZED[2]),
+	.IN2(TR_ALTERA_SYNTHESIZED[3]),
+	.IN5(TR_ALTERA_SYNTHESIZED[0]),
+	.IN4(TR_ALTERA_SYNTHESIZED[1]),
+	.OUT(SYNTHESIZED_WIRE_43));
+
+assign	SYNTHESIZED_WIRE_46 =  ~SYNTHESIZED_WIRE_43;
+
+assign	SYNTHESIZED_WIRE_14 = SYNTHESIZED_WIRE_17 & SYNTHESIZED_WIRE_18 & SYNTHESIZED_WIRE_19 & SYNTHESIZED_WIRE_20 & SYNTHESIZED_WIRE_21 & SYNTHESIZED_WIRE_22;
+
+assign	SYNTHESIZED_WIRE_18 =  ~AM;
+
+assign	AM_OUTPUT = AM & SYNTHESIZED_WIRE_23;
+
+
+always@(posedge AM or negedge SYNTHESIZED_WIRE_44 or negedge SYNTHESIZED_WIRE_45)
+begin
+if (!SYNTHESIZED_WIRE_44)
+	begin
+	DFF_inst29 <= 0;
+	end
+else
+if (!SYNTHESIZED_WIRE_45)
+	begin
+	DFF_inst29 <= 1;
+	end
+else
+	begin
+	DFF_inst29 <= SYNTHESIZED_WIRE_48;
+	end
+end
+
+
+always@(posedge SYNTHESIZED_WIRE_28 or negedge SYNTHESIZED_WIRE_44 or negedge SYNTHESIZED_WIRE_45)
+begin
+if (!SYNTHESIZED_WIRE_44)
+	begin
+	TR_ALTERA_SYNTHESIZED[2] <= 0;
+	end
+else
+if (!SYNTHESIZED_WIRE_45)
+	begin
+	TR_ALTERA_SYNTHESIZED[2] <= 1;
+	end
+else
+	begin
+	TR_ALTERA_SYNTHESIZED[2] <= SYNTHESIZED_WIRE_45;
+	end
+end
+
+assign	SYNTHESIZED_WIRE_0 = CLS | SYNTHESIZED_WIRE_48;
+
+assign	SYNTHESIZED_WIRE_40 = CLS | DFF_inst29;
+
+
+always@(posedge SYNTHESIZED_WIRE_33 or negedge SYNTHESIZED_WIRE_44 or negedge SYNTHESIZED_WIRE_45)
+begin
+if (!SYNTHESIZED_WIRE_44)
+	begin
+	TR_ALTERA_SYNTHESIZED[1] <= 0;
+	end
+else
+if (!SYNTHESIZED_WIRE_45)
+	begin
+	TR_ALTERA_SYNTHESIZED[1] <= 1;
+	end
+else
+	begin
+	TR_ALTERA_SYNTHESIZED[1] <= SYNTHESIZED_WIRE_45;
+	end
+end
+
+
+always@(posedge SYNTHESIZED_WIRE_37 or negedge SYNTHESIZED_WIRE_44 or negedge SYNTHESIZED_WIRE_45)
+begin
+if (!SYNTHESIZED_WIRE_44)
+	begin
+	TR_ALTERA_SYNTHESIZED[0] <= 0;
+	end
+else
+if (!SYNTHESIZED_WIRE_45)
+	begin
+	TR_ALTERA_SYNTHESIZED[0] <= 1;
+	end
+else
+	begin
+	TR_ALTERA_SYNTHESIZED[0] <= SYNTHESIZED_WIRE_45;
+	end
+end
+
+
+assign	SYNTHESIZED_WIRE_44 =  ~SYNTHESIZED_WIRE_40;
+
+assign	SYNTHESIZED_WIRE_3 = SET[4] & SYNTHESIZED_WIRE_46;
+
+assign	SYNTHESIZED_WIRE_11 = SET[3] & SYNTHESIZED_WIRE_46;
+
+assign	OUT = OUT_ALTERA_SYNTHESIZED;
+assign	TR = TR_ALTERA_SYNTHESIZED;
+
+endmodule
+
+module or5_0(IN1,IN3,IN2,IN5,IN4,OUT);
+/* synthesis black_box */
+
+input IN1;
+input IN3;
+input IN2;
+input IN5;
+input IN4;
+output OUT;
+
+endmodule
+
+module or5_1(IN1,IN3,IN2,IN5,IN4,OUT);
+/* synthesis black_box */
+
+input IN1;
+input IN3;
+input IN2;
+input IN5;
+input IN4;
+output OUT;
+
+endmodule
