@@ -1,0 +1,57 @@
+E:/QUARTUS/UART_2/simulation/modelsim/altpll0.v {1 {vlog -work work E:/QUARTUS/UART_2/simulation/modelsim/altpll0.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module altpll0
+
+Top level modules:
+	altpll0
+
+} {} {}} E:/QUARTUS/UART_2/simulation/modelsim/TB.sv {1 {vlog -work work -sv E:/QUARTUS/UART_2/simulation/modelsim/TB.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TB
+
+Top level modules:
+	TB
+
+} {} {}} E:/QUARTUS/UART_2/simulation/modelsim/UART_transmitter.sv {1 {vlog -work work -sv E:/QUARTUS/UART_2/simulation/modelsim/UART_transmitter.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_transmitter
+
+Top level modules:
+	UART_transmitter
+
+} {} {}} E:/QUARTUS/UART_2/simulation/modelsim/UART_receiver.sv {1 {vlog -work work -sv E:/QUARTUS/UART_2/simulation/modelsim/UART_receiver.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_receiver
+
+Top level modules:
+	UART_receiver
+
+} {} {}} E:/QUARTUS/UART_2/simulation/modelsim/DEL_COUNTER.sv {1 {vlog -work work -sv E:/QUARTUS/UART_2/simulation/modelsim/DEL_COUNTER.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DEL_COUNTER
+
+Top level modules:
+	DEL_COUNTER
+
+} {} {}} E:/QUARTUS/UART_2/simulation/modelsim/CONECT.sv {1 {vlog -work work -sv E:/QUARTUS/UART_2/simulation/modelsim/CONECT.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CONECT
+
+Top level modules:
+	CONECT
+
+} {} {}} E:/QUARTUS/UART_2/simulation/modelsim/DEL.sv {1 {vlog -work work -sv E:/QUARTUS/UART_2/simulation/modelsim/DEL.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DEL
+
+Top level modules:
+	DEL
+
+} {} {}} E:/QUARTUS/UART_2/simulation/modelsim/all_uart.v {1 {vlog -work work E:/QUARTUS/UART_2/simulation/modelsim/all_uart.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module all_uart
+
+Top level modules:
+	all_uart
+
+} {} {}}

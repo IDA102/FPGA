@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\QUARTUS\UART_2\simulation\qsim
+vall_uart
+Z1 I_h0j=YH1ebRX;]Z;ndD@`2
+Z2 V:mdfDO1WA=JFMmOjV6Fb11
+Z3 dE:\QUARTUS\UART_2\simulation\qsim
+Z4 w1609167564
+Z5 8UART_2.vo
+Z6 FUART_2.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|UART_2.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 bgbWSMmzhzLS869m^SoAW2
+!s85 0
+Z11 !s108 1609167565.620000
+Z12 !s107 UART_2.vo|
+!s101 -O0
+vall_uart_vlg_check_tst
+!i10b 1
+Z13 !s100 7lGgo[:RH>FC59K2XK?5n1
+Z14 I]]g]HeW`n5aDV4kN4]ITX3
+Z15 VP9z@?LC`MdDC=LO45O6EF3
+R3
+Z16 w1609167563
+Z17 8UART_2.vt
+Z18 FUART_2.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z19 !s108 1609167565.869000
+Z20 !s107 UART_2.vt|
+Z21 !s90 -work|work|UART_2.vt|
+!s101 -O0
+R9
+vall_uart_vlg_sample_tst
+!i10b 1
+Z22 !s100 ]3=IVGCiM[6BZ9DPC^ifC0
+Z23 IZlO:ZeYLmRh487NHQAm3E1
+Z24 VEfR;6ElD7Ioen`i4_ER>10
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vall_uart_vlg_vec_tst
+!i10b 1
+Z25 !s100 J;dKBacK6KC1C_R>[POoZ2
+Z26 ISkhEl[>FV3eW^I=1i09?U0
+Z27 V=0B]a@;Y4;z7Ja8^A]ZZO2
+R3
+R16
+R17
+R18
+Z28 L0 195
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
