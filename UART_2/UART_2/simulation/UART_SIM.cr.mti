@@ -1,0 +1,43 @@
+E:/QUARTUS/UART_2/UART_2/simulation/CONECT.sv {1 {vlog -work work -sv E:/QUARTUS/UART_2/UART_2/simulation/CONECT.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CONECT
+
+Top level modules:
+	CONECT
+
+} {} {}} E:/QUARTUS/UART_2/UART_2/simulation/DEL_COUNTER.sv {1 {vlog -work work -sv E:/QUARTUS/UART_2/UART_2/simulation/DEL_COUNTER.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DEL_COUNTER
+
+Top level modules:
+	DEL_COUNTER
+
+} {} {}} E:/QUARTUS/UART_2/UART_2/simulation/UART_receiver.sv {1 {vlog -work work -sv E:/QUARTUS/UART_2/UART_2/simulation/UART_receiver.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_receiver
+
+Top level modules:
+	UART_receiver
+
+} {} {}} E:/QUARTUS/UART_2/UART_2/simulation/UART_transmitter.sv {1 {vlog -work work -sv E:/QUARTUS/UART_2/UART_2/simulation/UART_transmitter.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module UART_transmitter
+
+Top level modules:
+	UART_transmitter
+
+} {} {}} E:/QUARTUS/UART_2/UART_2/simulation/DEL.sv {1 {vlog -work work -sv E:/QUARTUS/UART_2/UART_2/simulation/DEL.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DEL
+
+Top level modules:
+	DEL
+
+} {} {}} E:/QUARTUS/UART_2/UART_2/simulation/tb.sv {1 {vlog -work work -sv E:/QUARTUS/UART_2/UART_2/simulation/tb.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}}
