@@ -6,32 +6,43 @@ module UART_receiver
 input clc,
 input res,
 input RX,
-output reg [7:0] word
+input ENABLE,
+output reg CONECT_PRIZNAC,
+output reg [7:0] word_receiver
 );
 
-reg [5:0] i;
 int PRIZNAC;
+reg [5:0] i;
 
 always @(posedge clc or negedge res)
 	begin
 		if (!res) 
 			begin
-				i		   = 0;
-				word 	   = 0;
+				i		   			= 0;
+				word_receiver 	    = 0;
+				CONECT_PRIZNAC		= 0;
 			end
 		else 
 			begin
-				if (RX == 0)
-					PRIZNAC = 1;	
-				if (PRIZNAC == 1)
+				if (ENABLE == 1)
 					begin
-						word[i] = RX;
-						i = i + 1;
-							if (i == 10)
-								begin
-									PRIZNAC = 0;
-									i <= 0;	
-								end									
+						if (RX == 0)
+							PRIZNAC = 1;	
+						if (PRIZNAC == 1)
+							begin
+								word_receiver[i-1] = RX;
+								i = i + 1;
+									if (i == 10)
+										begin
+											PRIZNAC = 0;
+											i = 0;
+											CONECT_PRIZNAC = 1;
+										end									
+							end
+					end	
+				else
+					begin
+						CONECT_PRIZNAC = 0;
 					end
 			end		
 	end

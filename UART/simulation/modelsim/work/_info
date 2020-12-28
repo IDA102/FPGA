@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\IMPULIS\simulation\modelsim
+vCONECT
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 !s100 @dFmOJSzdA?o_`O8ZGEfG3
+Z3 ILJObIj3:ZcVi^l?PlK=IQ3
+Z4 V0UUd:U@M6IN0k?iD@cG160
+Z5 !s105 CONECT_sv_unit
+S1
+Z6 dE:\QUARTUS\UART\simulation\modelsim
+Z7 w1542026560
+Z8 8E:/QUARTUS/UART/simulation/modelsim/CONECT.sv
+Z9 FE:/QUARTUS/UART/simulation/modelsim/CONECT.sv
+L0 3
+Z10 OV;L;10.1d;51
+r1
+31
+Z11 !s90 -reportprogress|300|-work|work|-sv|E:/QUARTUS/UART/simulation/modelsim/CONECT.sv|
+Z12 o-work work -sv -O0
+Z13 n@c@o@n@e@c@t
+Z14 !s108 1608903432.720000
+Z15 !s107 E:/QUARTUS/UART/simulation/modelsim/CONECT.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vDEL
+R1
+Z16 !s100 o>1WNion0D4IY@m;Vl6^@1
+Z17 IZJ=MLnF8i65Tf11_dKRbI1
+Z18 V>[Lhikn7alcZX2@f[mfZ]2
+Z19 !s105 DEL_sv_unit
+S1
+R6
+Z20 w1542026220
+Z21 8E:/QUARTUS/UART/simulation/modelsim/DEL.sv
+Z22 FE:/QUARTUS/UART/simulation/modelsim/DEL.sv
+L0 5
+R10
+r1
+31
+Z23 !s90 -reportprogress|300|-work|work|-sv|E:/QUARTUS/UART/simulation/modelsim/DEL.sv|
+R12
+Z24 n@d@e@l
+Z25 !s108 1608903432.851000
+Z26 !s107 E:/QUARTUS/UART/simulation/modelsim/DEL.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vDEL_COUNTER
+R1
+Z27 !s100 ?1CP9c;aIFFVl5O:cO7:Z2
+Z28 IfeN51`gMSdjmJB2?75PS71
+Z29 VE_3iib?_OcV8g7GGS;dPY1
+Z30 !s105 DEL_COUNTER_sv_unit
+S1
+R6
+Z31 w1541667666
+Z32 8E:/QUARTUS/UART/simulation/modelsim/DEL_COUNTER.sv
+Z33 FE:/QUARTUS/UART/simulation/modelsim/DEL_COUNTER.sv
+L0 3
+R10
+r1
+31
+Z34 !s90 -reportprogress|300|-work|work|-sv|E:/QUARTUS/UART/simulation/modelsim/DEL_COUNTER.sv|
+R12
+Z35 n@d@e@l_@c@o@u@n@t@e@r
+Z36 !s108 1608903432.969000
+Z37 !s107 E:/QUARTUS/UART/simulation/modelsim/DEL_COUNTER.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb
+R1
+Z38 !s100 E81lHBk[C=[hz_NH;Iilh0
+Z39 Ie;V=OiWS``N]99?83fhZ83
+Z40 VV@Xn<HnSRM[I5c1?BH]3a3
+Z41 !s105 tb_sv_unit
+S1
+R6
+Z42 w1542716586
+Z43 8E:/QUARTUS/UART/simulation/modelsim/tb.sv
+Z44 FE:/QUARTUS/UART/simulation/modelsim/tb.sv
+L0 7
+R10
+r1
+31
+Z45 !s90 -reportprogress|300|-work|work|-sv|E:/QUARTUS/UART/simulation/modelsim/tb.sv|
+R12
+Z46 !s108 1608903433.135000
+Z47 !s107 E:/QUARTUS/UART/simulation/modelsim/tb.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vUART
+R1
+Z48 !s100 NalJ5`EH^]SG[3EmLe]Y[0
+Z49 I<WKd3zKV0H_Bd]Q4bzl[V1
+Z50 VSIgP<AY:ZgiEUb@98V84Y0
+Z51 !s105 UART_sv_unit
+S1
+Z52 dC:\UART\simulation\modelsim
+Z53 w1538732748
+Z54 8C:/UART/simulation/modelsim/UART.sv
+Z55 FC:/UART/simulation/modelsim/UART.sv
+L0 4
+R10
+r1
+31
+Z56 !s90 -reportprogress|300|-work|work|-sv|C:/UART/simulation/modelsim/UART.sv|
+R12
+Z57 n@u@a@r@t
+Z58 !s108 1538733421.485000
+Z59 !s107 C:/UART/simulation/modelsim/UART.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vUART_receiver
+R1
+Z60 !s100 R_K4A3>fQ?W6ch[7FOZDG2
+Z61 IHIT4zbK8XX`:VT_HSZcRA3
+Z62 VZ<Til_LFQ<M6XO5iH``gS2
+Z63 !s105 UART_receiver_sv_unit
+S1
+R6
+Z64 w1541508004
+Z65 8E:/QUARTUS/UART/simulation/modelsim/UART_receiver.sv
+Z66 FE:/QUARTUS/UART/simulation/modelsim/UART_receiver.sv
+L0 4
+R10
+r1
+31
+Z67 !s90 -reportprogress|300|-work|work|-sv|E:/QUARTUS/UART/simulation/modelsim/UART_receiver.sv|
+R12
+Z68 n@u@a@r@t_receiver
+!i10b 1
+!s85 0
+Z69 !s108 1608903433.259000
+Z70 !s107 E:/QUARTUS/UART/simulation/modelsim/UART_receiver.sv|
+!s101 -O0
+vUART_transmitter
+R1
+!i10b 1
+Z71 !s100 J_CIIBk9CJg2nM2Z=cz]i1
+Z72 IKI=[zM@z7j<ETBJ3=z9D81
+Z73 V3A5TjE0_ZnhKgHJV:bfdD2
+Z74 !s105 UART_transmitter_sv_unit
+S1
+R6
+Z75 w1542024240
+Z76 8E:/QUARTUS/UART/simulation/modelsim/UART_transmitter.sv
+Z77 FE:/QUARTUS/UART/simulation/modelsim/UART_transmitter.sv
+L0 3
+R10
+r1
+!s85 0
+31
+!s108 1608903433.387000
+!s107 E:/QUARTUS/UART/simulation/modelsim/UART_transmitter.sv|
+Z78 !s90 -reportprogress|300|-work|work|-sv|E:/QUARTUS/UART/simulation/modelsim/UART_transmitter.sv|
+!s101 -O0
+R12
+Z79 n@u@a@r@t_transmitter

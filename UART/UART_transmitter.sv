@@ -4,45 +4,69 @@ module UART_transmitter
 (
 input clc,
 input res,
-input reg [7:0] MESSAGE,
+input reg [7:0] word_transmitter,
 input reg TRANSMITTER_PRIZNAK,
 output reg TX,
-output priznak_end_transmitter
+output reg priznak_end_transmitter
 );
 
-int PRIZNAK;
+reg PRIZNAK;
 reg [5:0] k;
 reg [9:0] TX_MESSAGE;
+reg out;
 
 always @(posedge clc or negedge res)
 	begin
 		if (!res) 
 			begin
-				k		   = 0;
-				TX		   = 1;
-				TX_MESSAGE = 1;
+				out						= 0;
+				k		   		 		= 0;
+				TX		   		 		= 1;
+				TX_MESSAGE 		 		= 255;
+				PRIZNAK					= 0;
+				priznak_end_transmitter = 0;
 			end
 		else 
 			begin
 				if (TRANSMITTER_PRIZNAK == 1)
-					PRIZNAK = 1;
-				if (PRIZNAK == 1)
 					begin
-						TX_MESSAGE[9] = 0;
-						TX_MESSAGE[8:1] = MESSAGE[7:0];
-						if (TX_MESSAGE != 1)
-							begin
-								TX = TX_MESSAGE[k];
-								k = k + 1;
-									if (k == 10)
-										begin
-											k <= 0;	
-											TX_MESSAGE = 1;
-											PRIZNAK = 0;
-											TX = 1;
-											priznak_end_transmitter = 1'
-										end		
-							end
+						PRIZNAK = 1;
+							if (PRIZNAK == 1)
+								begin
+									TX_MESSAGE[0] = 0;
+									TX_MESSAGE[9] = 1;
+									TX_MESSAGE[8:1] = word_transmitter[7:0];
+									out = 1; 
+										 if (out == 1)
+											begin
+												TX = TX_MESSAGE[k];
+												k = k + 1;
+													if (k == 10)
+														begin
+															out = 0;
+															priznak_end_transmitter = 1;
+															
+															TX_MESSAGE = 255;
+															PRIZNAK = 0;
+															TX = 1;
+															
+														end		
+													if (k == 11)
+														begin
+															out = 0;
+															TX_MESSAGE = 255;
+															k = 0;	
+															PRIZNAK = 0;
+															TX = 1;
+															priznak_end_transmitter = 1;
+														end				
+											end
+								end
+					end
+				else 
+					begin
+						PRIZNAK = 0;
+						priznak_end_transmitter = 0;
 					end
 			end
 	end

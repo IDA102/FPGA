@@ -1,0 +1,140 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\QUARTUS\UART\simulation\modelsim
+valtpll0
+Ik`m0chW=g>X;Ni=<`8zbS2
+V^c1:Ynie7m^RzJ>PLJ41o1
+Z1 dE:\QUARTUS\UART\simulation\modelsim
+w1542194818
+8E:/QUARTUS/UART/altpll0.v
+FE:/QUARTUS/UART/altpll0.v
+L0 39
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 PjmM]V0c@_SWzziKS04nK0
+!s85 0
+!s108 1608896915.687000
+!s107 E:/QUARTUS/UART/altpll0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/QUARTUS/UART|E:/QUARTUS/UART/altpll0.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/QUARTUS/UART -O0
+valtpll0_altpll2
+I`YLJ;WQjb__;KRlXF96A<2
+V?O6:aA3TYWa4jQo4^o31M1
+R1
+w1542194826
+8E:/QUARTUS/UART/db/altpll0_altpll2.v
+FE:/QUARTUS/UART/db/altpll0_altpll2.v
+L0 29
+R2
+r1
+31
+R3
+!i10b 1
+!s100 <;;R1WE[H]GO58lNiH`kR3
+!s85 0
+!s108 1608896915.872000
+!s107 E:/QUARTUS/UART/db/altpll0_altpll2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/QUARTUS/UART/db|E:/QUARTUS/UART/db/altpll0_altpll2.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/QUARTUS/UART/db -O0
+vCONECT
+Z4 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I1B^c3UEYcdT>AD0DVMgc=2
+VC5C?[CFb_<dXK4KBjl@HA3
+Z5 !s105 CONECT_sv_unit
+S1
+R1
+w1542202004
+8E:/QUARTUS/UART/CONECT.sv
+FE:/QUARTUS/UART/CONECT.sv
+L0 3
+R2
+r1
+31
+Z6 o-sv -work work -O0
+Z7 !s92 -sv -work work +incdir+E:/QUARTUS/UART -O0
+Z8 n@c@o@n@e@c@t
+!i10b 1
+!s100 A`LjT0ll_D>`VK]d?9JK]2
+!s85 0
+!s108 1608896916.343000
+!s107 E:/QUARTUS/UART/CONECT.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/QUARTUS/UART|E:/QUARTUS/UART/CONECT.sv|
+!s101 -O0
+vDEL
+R4
+IQ<JTnR@2=1V:U^dDVm69J0
+Z9 V>[Lhikn7alcZX2@f[mfZ]2
+Z10 !s105 DEL_sv_unit
+S1
+R1
+w1542206412
+8E:/QUARTUS/UART/DEL.sv
+FE:/QUARTUS/UART/DEL.sv
+L0 5
+R2
+r1
+31
+R6
+R7
+Z11 n@d@e@l
+!i10b 1
+!s100 1ng`T]cSNLcfZRoE?f<N@3
+!s85 0
+!s108 1608896916.164000
+!s107 E:/QUARTUS/UART/DEL.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/QUARTUS/UART|E:/QUARTUS/UART/DEL.sv|
+!s101 -O0
+vtb
+R4
+!i10b 1
+!s100 E81lHBk[C=[hz_NH;Iilh0
+I5]UONdP79CnEf4f9>mFhB2
+Z12 VV@Xn<HnSRM[I5c1?BH]3a3
+Z13 !s105 tb_sv_unit
+S1
+R1
+w1542716586
+8E:/QUARTUS/UART/simulation/modelsim/tb.sv
+FE:/QUARTUS/UART/simulation/modelsim/tb.sv
+L0 7
+R2
+r1
+!s85 0
+31
+!s108 1608896916.524000
+!s107 E:/QUARTUS/UART/simulation/modelsim/tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/QUARTUS/UART/simulation/modelsim|E:/QUARTUS/UART/simulation/modelsim/tb.sv|
+!s101 -O0
+R6
+!s92 -sv -work work +incdir+E:/QUARTUS/UART/simulation/modelsim -O0
+vUART_transmitter
+R4
+I=a6Gm3BOKmoKlZO`2`6j41
+Z14 V3A5TjE0_ZnhKgHJV:bfdD2
+Z15 !s105 UART_transmitter_sv_unit
+S1
+R1
+w1542202172
+8E:/QUARTUS/UART/UART_transmitter.sv
+FE:/QUARTUS/UART/UART_transmitter.sv
+L0 3
+R2
+r1
+31
+R6
+Z16 n@u@a@r@t_transmitter
+R7
+!i10b 1
+!s100 7e_BDZSY`zQZd8D0geT:J0
+!s85 0
+!s108 1608896916.015000
+!s107 E:/QUARTUS/UART/UART_transmitter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/QUARTUS/UART|E:/QUARTUS/UART/UART_transmitter.sv|
+!s101 -O0

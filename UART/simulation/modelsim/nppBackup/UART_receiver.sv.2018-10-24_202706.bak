@@ -1,0 +1,45 @@
+// UART ver. 1.0 FPGA CYCLONE IV EP4CE115F29C7 
+//Приёмник//Receiver
+
+module UART_receiver
+(
+input clc,
+input res,
+input RX,
+input ENABLE,
+output CONECT_PRIZNAC,
+output reg [7:0] word_receiver
+);
+
+int PRIZNAC;
+reg [5:0] i;
+
+always @(posedge clc or negedge res)
+	begin
+		if (!res) 
+			begin
+				i		   			= 0;
+				word_receiver 	    = 0;
+				CONECT_PRIZNAC		= 0;
+			end
+		else 
+			begin
+				if (ENABLE == 1)
+					begin
+						if (RX == 0)
+							PRIZNAC = 1;	
+						if (PRIZNAC == 1)
+							begin
+								word_receiver[i] = RX;
+								i = i + 1;
+									if (i == 10)
+										begin
+											PRIZNAC = 0;
+											i <= 0;
+											CONECT_PRIZNAC = 1;
+										end									
+							end
+					end		
+			end		
+	end
+endmodule
